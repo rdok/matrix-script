@@ -1,4 +1,5 @@
 #!/bin/bash
+# starts script
 
 clear
 
