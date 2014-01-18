@@ -10,6 +10,7 @@ Original authors: http://sourceforge.net/projects/matrixbashshell/
 * Refactors code; Indentations, Renames, etc...
 * Adds comments explaining commands and options.
 * Adds full screen terminal functionality.
+* Refactors to absolute path use; script can run now from anywhere
 
 ###TO-DO###
 * Even more simpler code
