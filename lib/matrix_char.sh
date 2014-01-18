@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# for each line in '~/matrix/katakana.in 
-for i in `cat ~/matrix/katakana.in`
+# for each line in '~/matrix/lib/katakana.in 
+for i in `cat ~/matrix/lib/katakana.in`
 	# echo a random character with index from 0 to 
 	do echo "$RANDOM .$i "
 done |

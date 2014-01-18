@@ -1,2 +1,2 @@
 #!/bin/bash
-gnome-terminal --full-screen -e ~/matrix/matrix.sh
+gnome-terminal --full-screen -e ~/matrix/lib/matrix.sh
