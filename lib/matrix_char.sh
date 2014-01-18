@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# for each line in '~/matrix/lib/katakana.in 
-for i in `cat ~/matrix/lib/katakana.in`
+dir_katak=${PWD} # assigns to a variable
+dir_katak="${dir_katak}/lib/katakana.in"
+
+# for each line in './katakana.in 
+for i in `cat $dir_katak`
 	# echo a random character with index from 0 to 
 	do echo "$RANDOM .$i "
 done |

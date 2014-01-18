@@ -56,7 +56,7 @@ do
 	# declare array variables and give; fill them with characters from matrix_char file
 	# http://www.thegeekstuff.com/2010/05/bash-variables/
 	declare -a char1
-	char1=(`~/matrix/lib/matrix_char.sh`)
+	char1=(`./lib/matrix_char.sh`)
 	declare -a char2
 	declare -a char3
 	declare -a char4
@@ -66,15 +66,15 @@ do
 	declare -a char8
 	declare -a char9
 	declare -a char10
-	char2=(`~/matrix/lib/matrix_char.sh`)
-	char3=(`~/matrix/lib/matrix_char.sh`)
-	char4=(`~/matrix/lib/matrix_char.sh`)
-	char5=(`~/matrix/lib/matrix_char.sh`)
-	char6=(`~/matrix/lib/matrix_char.sh`)
-	char7=(`~/matrix/lib/matrix_char.sh`)
-	char8=(`~/matrix/lib/matrix_char.sh`)
-	char9=(`~/matrix/lib/matrix_char.sh`)
-	char10=(`~/matrix/lib/matrix_char.sh`)
+	char2=(`./lib/matrix_char.sh`)
+	char3=(`./lib/matrix_char.sh`)
+	char4=(`./lib/matrix_char.sh`)
+	char5=(`./lib/matrix_char.sh`)
+	char6=(`./lib/matrix_char.sh`)
+	char7=(`./lib/matrix_char.sh`)
+	char8=(`./lib/matrix_char.sh`)
+	char9=(`./lib/matrix_char.sh`)
+	char10=(`./lib/matrix_char.sh`)
 
 	# choose a random number between 0 and total lines of screen
 	line=$((RANDOM%$tot_lines))
