@@ -17,3 +17,5 @@ Original authors: http://sourceforge.net/projects/matrixbashshell/
 * Refactor from four scripts to one
 * Mirror Katakana characters; Like the Animators of Matrix did.
 * Screensaver; If shell/gui is idle for x minutes start the script.
+* Highlight first letter of each column
+* Better flow
