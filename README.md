@@ -9,7 +9,7 @@ Original authors: http://sourceforge.net/projects/matrixbashshell/
 * Adds Katakana Japanese characters; instead of symbols.
 * Refactors code; Indentations, Renames, etc...
 * Adds comments explaining commands and options.
-* Adds script for full screen shell.
+* Adds full screen terminal functionality.
 
 ###TO-DO###
 * Even more simpler code
