@@ -48,7 +48,7 @@ tput setaf 2
 tot_lines="$(tput lines)"
 tot_columns="$(tput cols)"
 
-for (( i = 1; i <= 1000; i++ ))
+for (( ; ; )) # infinite loop
 do
 	# generate a random number between 0 and 3; 
 	max1=$((RANDOM%3))
