@@ -3,9 +3,9 @@
 dir_katak=${PWD} # assigns to a variable
 dir_katak="${dir_katak}/lib/katakana.in"
 
-# for each line in './katakana.in 
-for i in `cat $dir_katak`
-	# echo a random character with index from 0 to 
+# for each line in './katakana.in
+for i in $(cat "$dir_katak")
+	# echo a random character with index from 0 to
 	do echo "$RANDOM .$i "
 done |
 	{
@@ -14,7 +14,7 @@ done |
 	} | {
 		# awk: a programming lagnuage designed to process text-based data
 		# prints the second file from the pipepline
-		awk '{print $2}' 
+		awk '{print $2}'
 	} | {
 		# sed	: stream edito: basic text transformation on an input stream
 		# -e	: add the script to the commands to be executed (causes the next string
@@ -32,8 +32,8 @@ done |
 		# 'd'	: delete pattern space. start next cycle.
 		# 'b'	: branch to label; if label is ommited, branch to end of script
 		# 'p'	: print the current patter space
-		sed -e '1{$p;x;d;}' -e '/^NEW/!{H;$!d;x;s/\n//g;b;}' -e 'x;s/\n//g;${p;x;}' 
+		sed -e '1{$p;x;d;}' -e '/^NEW/!{H;$!d;x;s/\n//g;b;}' -e 'x;s/\n//g;${p;x;}'
 	} | {
 			# substitue '.' with ' ' found in each input line from pipeline
-			sed 's/\./ /g' 
+			sed 's/\./ /g'
 	}

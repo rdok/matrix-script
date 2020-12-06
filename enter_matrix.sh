@@ -4,14 +4,14 @@
 clear
 
 # find vertical center
-vert_cent=$((`tput lines` / 2))
+vert_cent=$(($(tput lines) / 2))
 # find horizontel center
-horzl_cent=$((`tput cols` / 2-10))
+horzl_cent=$(($(tput cols) / 2-10))
 
 # change the foreground color of the terminal (cyan)
 tput setf 6
 
-# Position the cursor at row $vert_cent, colum horzl_cent and echo 
+# Position the cursor at row $vert_cent, colum horzl_cent and echo
 tput cup $vert_cent $horzl_cent && echo "entering the matrix"
 # sleep for one second
 sleep 1
@@ -50,14 +50,14 @@ tot_columns="$(tput cols)"
 
 for (( ; ; )) # infinite loop
 do
-	# generate a random number between 0 and 3; 
+	# generate a random number between 0 and 3;
 	max1=$((RANDOM%3))
 	max=$(($tot_lines-$max1))
 
 	# declare array variables and give; fill them with characters from matrix_char file
 	# http://www.thegeekstuff.com/2010/05/bash-variables/
 	declare -a char1
-	char1=(`./lib/matrix_char.sh`)
+	char1=($(./lib/matrix_char.sh))
 	declare -a char2
 	declare -a char3
 	declare -a char4
@@ -67,14 +67,14 @@ do
 	declare -a char8
 	declare -a char9
 	declare -a char10
-	char2=(`./lib/matrix_char.sh`)
-	char3=(`./lib/matrix_char.sh`)
-	char4=(`./lib/matrix_char.sh`)
-	char5=(`./lib/matrix_char.sh`)
-	char6=(`./lib/matrix_char.sh`)
-	char7=(`./lib/matrix_char.sh`)
-	char8=(`./lib/matrix_char.sh`)
-	char9=(`./lib/matrix_char.sh`)
+	char2=($(./lib/matrix_char.sh))
+	char3=($(./lib/matrix_char.sh))
+	char4=($(./lib/matrix_char.sh))
+	char5=($(./lib/matrix_char.sh))
+	char6=($(./lib/matrix_char.sh))
+	char7=($(./lib/matrix_char.sh))
+	char8=($(./lib/matrix_char.sh))
+	char9=($(./lib/matrix_char.sh))
 	char10=(`./lib/matrix_char.sh`)
 
 	# choose a random number between 0 and total lines of screen
@@ -177,5 +177,3 @@ do
 
 # end outer for
 done
-
-

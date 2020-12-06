@@ -2,7 +2,7 @@
 
 while [ 1 ];
 do
-	if [ `xprintidle` -gt 13000 ];
+	if [ $(xprintidle) -gt 13000 ];
 	then
 #		pid=`gnome-screensaver-command -q | head -n 1 | awk '{print $4}'`
 ./enter_matrix.sh
